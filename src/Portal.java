@@ -44,7 +44,7 @@ public class Portal {
                 }
                 case "q": {
                     Flight.writeFlights();
-                    Passenger.writePassenegers();
+                    Passenger.writePassengers();
                     System.exit(0);
                     break;
                 }

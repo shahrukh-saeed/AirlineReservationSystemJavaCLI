@@ -33,11 +33,11 @@ public class Passenger {
  
     }
 
-    public static void writePassenegers() throws IOException {
+    public static void writePassengers() throws IOException {
         FileWriter writePass = new FileWriter("Passengers.txt");
 
         for (Passenger pass : passengers) {
-            writePass.write(pass.getFlightNum() + ";" + pass.getName() + ";" + pass.getRow() + ";" + pass.getCol());
+            writePass.write(pass.getFlightNum() + ";" + pass.getName() + ";" + pass.getRow() + ";" + pass.getCol() + "\n");
         }
 
         writePass.close();

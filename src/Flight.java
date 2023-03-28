@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -38,7 +39,7 @@ public class Flight {
         FileWriter writeFlights = new FileWriter("Flights.txt");
 
         for (Flight flight : flights) {
-            writeFlights.write(flight.getFlightNum() + ";" + flight.getModel() + ";" + flight.getRows() + ";" + flight.getCol());
+            writeFlights.write(flight.getFlightNum() + ";" + flight.getModel() + ";" + flight.getRows() + ";" + flight.getCol() + "\n");
         }
 
         writeFlights.close();

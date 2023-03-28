@@ -1,1 +1,3 @@
 A123;Airbus;50;15
+B123;Airbus;40;10
+C123;Boeing;70;12
