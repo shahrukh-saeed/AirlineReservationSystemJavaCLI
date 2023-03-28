@@ -5,6 +5,8 @@ public class Portal {
     public static void main(String[] args) throws Exception {
         Scanner scanS = new Scanner(System.in);
         Scanner scanN = new Scanner(System.in);
+        Flight.readFlights();
+        Passenger.readPassengers();
 
         System.out.println("AIRLINE RESERVATION SYSTEM");
 
@@ -41,6 +43,8 @@ public class Portal {
                     break;
                 }
                 case "q": {
+                    Flight.writeFlights();
+                    Passenger.writePassenegers();
                     System.exit(0);
                     break;
                 }
